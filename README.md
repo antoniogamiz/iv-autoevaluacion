@@ -1,10 +1,16 @@
 # Ejercicios
 
+## Introducción a la infraestructura virtual
+
 **Ejercicio 1:** Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. [Consultar este artículo en Infoautónomos sobre el tema](https://www.infoautonomos.com/consultas-a-la-comunidad/988/).
 
-Tras leer el artículo no tengo mucha idea de cómo proceder la verdad. He encontrado una [tabla de amortizaciones](https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Empresas_y_profesionales/Empresas/Impuesto_sobre_Sociedades/Periodos_impositivos_a_partir_de_1_1_2015/Base_imponible/Amortizacion/Tabla_de_coeficientes_de_amortizacion_lineal_.shtml) donde sale lo del 25% de amortización para ordenadores.
+- [Tabla de amortizaciones](https://www.agenciatributaria.es/AEAT.internet/Inicio/_Segmentos_/Empresas_y_profesionales/Empresas/Impuesto_sobre_Sociedades/Periodos_impositivos_a_partir_de_1_1_2015/Base_imponible/Amortizacion/Tabla_de_coeficientes_de_amortizacion_lineal_.shtml) donde sale lo del 25% de amortización para ordenadores.
 
-[Aquí](https://www.pccomponentes.com/servidores) hay servidores para mirar precios.
+- [Aquí](https://www.pccomponentes.com/servidores) hay servidores para mirar precios. Yo he escogido [este](https://www.pccomponentes.com/hpe-proliant-dl360-gen10-intel-xeon-silver-4214r-32gb), por 2599€.
+
+Para amortizarlo en 4 años tenemos que elegir un coeficiente de amortización del 25%, que coincide con el máximo según la tabla anterior. Luego el coste de amortización por año será de 649.,75€.
+
+Para amortizarlo en 7 años deberemos escoger un coeficiente de amortización de 14,29%, luego el coste de amortización será de 371.29€ por año.
 
 **Ejercicio 2:** Usando las tablas de precios de servicios de alojamiento en Internet “clásicos”, es decir, que ofrezcan Virtual Private Servers o servidores físicos, y de proveedores de servicios en la nube, comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) en el caso de que la infraestructura comprada se usa solo el 1% o el 10% del tiempo.
 
