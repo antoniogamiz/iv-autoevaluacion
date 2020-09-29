@@ -25,3 +25,17 @@ El precio en OVH CLoud es de 5,57€ mensuales con compromiso a 12 meses, luego 
 El coste OVH es el mismo si se usa el 1% o el 10% del tiempo ya que se compra con compromiso de 12 meses. En el caso de Digital Ocean tenemos que calcular el 1% y el 10% de horas de un año: 89 y 892 respectivamente. Luego el coste sería 0.534€ y 5.35€ respectivamente.
 
 Luego evidentemente el uso de recursos virtuales es mucho más rentable que el de VPS.
+
+**Ejercicio 3:** En general, cualquier ordenador con menos de 5 o 6 años tendrá estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden? Si usas una máquina virtual, ¿qué resultado da? ¿Y en una Raspberry Pi o, si tienes acceso, el procesador del móvil?
+
+![](img/wsl.png)
+
+Linux virtualizado sobre Windows 10 (usando WSL2). Mi ordenador con Windows no tiene la virtualización hardware activada.
+
+![](img/linux.jpg)
+
+Linux nativo en un Thinkpad donde sí está activada.
+
+![](img/movil.jpg)
+
+Mi móvil Android donde no está activada.
