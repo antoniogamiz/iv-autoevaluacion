@@ -38,4 +38,9 @@ Linux nativo en un Thinkpad donde sí está activada.
 
 ![](img/movil.jpg)
 
-Mi móvil Android donde no está activada.
+En mi móvil Android donde no está activada.
+
+Usando la orden `LC_ALL=C | grep Virtualization` obtengo:
+
+- En WSL2: `Virtualization type: full`
+- En Linux nativo en Thinkpad: `Virtualization: VT-x`
