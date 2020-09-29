@@ -44,3 +44,15 @@ Usando la orden `LC_ALL=C | grep Virtualization` obtengo:
 
 - En WSL2: `Virtualization type: full`
 - En Linux nativo en Thinkpad: `Virtualization: VT-x`
+
+**Ejercicio 4** Instalar un hipervisor para gestionar máquinas virtuales, que más adelante se podrá usar en pruebas y ejercicios. Usar siempre que sea posible un hipervisor que sea software libre.
+
+Voy a aprovechar que tengo VirtualBox instalado. Es un hipervisor de tipo 2 (corre como aplicación, no _bare metal_) y además es Open Source.
+
+[Captura](img/virtualbox.jpg) donde muestro que tengo Virtual Box instalado, dónde además salen las máquinas virtuales de SWAP y un artículo para ver como se calculan las amortizaciones del ejercicio 1 porque no sé hacerlo :D.
+
+**Ejercicio 5:** Darse de alta en una web que permita hacer pruebas con alguno de los sistemas de gestión de nube libres como los mencionados en los párrafos anteriores, aunque sea temporalmente. Si la prueba es menos de un mes, simplemente anotarlo y dejarlo para el mes de diciembre, más o menos.
+
+Estoy dado de alta en Digital Ocean porque lo uso para mis cosillas personales (y porque por hacer el [Hacktobeerfest](https://hacktoberfest.digitalocean.com/) te dan crédito gratis jeje).
+
+![](img/do.png)
