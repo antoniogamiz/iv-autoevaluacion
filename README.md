@@ -82,19 +82,19 @@ Por ahora vacío.
 
 1. Darse de alta.
 
-Primeramente nos vamos a la página de Travis y logearnos (yo ya estoy registrado desde hace tiempo, así que ya tengo cuenta linkeada a GitHub):
+Primeramente nos vamos a la página de Travis y nos logeamoos (yo ya estoy registrado desde hace tiempo, así que ya tengo cuenta linkeada con GitHub):
 
-![](h4-1.png)
+![](img/h4-1.png)
 
 Como se aprecia en esta captura, suelo usar Travis en otros proyectos. En concreto, los que aparecen ahí son de Raku, un lenguaje de programación.
 
-![](h4-2.png)
+![](img/h4-2.png)
 
 2. Activar el repositorio en el que se vaya a aplicar la integración continua:
 
-![](h4-3.png)
+![](img/h4-3.png)
 
-![](h4-4.png)
+![](img/h4-4.png)
 
 A mí ya me aparece el repositorio como añadido porque tengo Travis configurado para todos los repositorios de mi cuenta. Es decir, con crear un archivo `.travis.yml` en cualquiera de mis repositorios ya se activa una build.
 
