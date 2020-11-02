@@ -1,6 +1,11 @@
 # Ejercicios
 
-## Introducción a la infraestructura virtual
+- [Hito 1](#hito-1)
+- [Hito 2](#hito-2)
+- [Hito 3](#hito-3)
+- [Hito 4](#hito-4)
+
+## Hito 1
 
 **Ejercicio 1:** Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. [Consultar este artículo en Infoautónomos sobre el tema](https://www.infoautonomos.com/consultas-a-la-comunidad/988/).
 
@@ -62,3 +67,70 @@ Voy a aprovechar que tengo VirtualBox instalado. Es un hipervisor de tipo 2 (cor
 Estoy dado de alta en Digital Ocean porque lo uso para mis cosillas personales (y porque por hacer el [Hacktobeerfest](https://hacktoberfest.digitalocean.com/) te dan crédito gratis jeje).
 
 ![](img/do.png)
+
+## Hito 2
+
+Por ahora vacío.
+
+## Hito 3
+
+Por ahora vacío.
+
+## Hito 4
+
+**Ejercicio 9**: Haced los dos primeros pasos antes de pasar al tercero.
+
+1. Darse de alta.
+
+Primeramente nos vamos a la página de Travis y logearnos (yo ya estoy registrado desde hace tiempo, así que ya tengo cuenta linkeada a GitHub):
+
+![](h4-1.png)
+
+Como se aprecia en esta captura, suelo usar Travis en otros proyectos. En concreto, los que aparecen ahí son de Raku, un lenguaje de programación.
+
+![](h4-2.png)
+
+2. Activar el repositorio en el que se vaya a aplicar la integración continua:
+
+![](h4-3.png)
+
+![](h4-4.png)
+
+A mí ya me aparece el repositorio como añadido porque tengo Travis configurado para todos los repositorios de mi cuenta. Es decir, con crear un archivo `.travis.yml` en cualquiera de mis repositorios ya se activa una build.
+
+**Ejercicio 10**: Configurar integración continua para nuestra aplicación usando Travis o algún otro sitio.
+
+Para configurar Deno en Travis tenemos dos opciones:
+
+- Instalar Deno cada vez que ejecutemos una buid y cachearlo. Lo que se puede hacer fácilmente con el siguiente archivo de configuración:
+
+    ~~~yml
+    language: sh
+
+    install:
+      - curl -fsSL https://deno.land/x/install/install.sh | sh
+      - export PATH="$HOME/.deno/bin:$PATH"
+
+    script:
+      - deno --version
+
+    cache:
+      directories:
+        - '$HOME/.deno'
+    ~~~
+
+- Usar el contenedor de Docker creado en el hito anterior:
+
+    ~~~yml
+        services:
+          - docker
+
+        before_install:
+          - git checkout master
+          - docker pull ghcr.io/antoniogamiz/manga-api
+
+        script:
+          - docker run -t -v `pwd`:/test ghcr.io/antoniogamiz/manga-api
+    ~~~
+
+Solo tenemos estas dos opciones porque Deno no es oficialmente soportado por Travis todavía.
