@@ -4,6 +4,7 @@
 - [Hito 2](#hito-2)
 - [Hito 3](#hito-3)
 - [Hito 4](#hito-4)
+- [Hito 5](#hito-5)
 
 ## Hito 1
 
@@ -134,3 +135,54 @@ Para configurar Deno en Travis tenemos dos opciones:
     ~~~
 
 Solo tenemos estas dos opciones porque Deno no es oficialmente soportado por Travis todavía.
+
+## Hito 5
+
+**Ejercicio 1:** Darse de alta en Vercel y Firebase, y descargarse los SDKs para poder trabajar con ellos localmente.
+
+#### Vercel
+
+Me doy de alta con github:
+
+![](img/1_1.png)
+
+Con la orden `npm i -g vercel` nos instalamos el cliente de Vercel:
+
+![](img/1_2.png)
+
+#### Firebase
+
+
+En Firebase ya estaba dado de alta previamente:
+
+![](img/1_3.png)
+
+Con la orden `npm install -g firebase-tools` nos instalamos el cliente de Firebase:
+
+![](img/1_4.png)
+
+**Ejercicio 2:** Tomar alguna de las funciones de prueba de Vercel, y hacer despliegues de prueba con el mismo.
+
+![](img/2_1.png)
+
+![](img/2_2.png)
+
+![](img/2_3.png)
+
+![](img/2_4.png)
+
+**Ejercicio 3:** Tomar alguna de las funciones de prueba de Netlify, y hacer despliegues de prueba con el mismo.
+
+Registro:
+
+![](img/3_1.png)
+
+Instalación de cli:
+
+![](img/3_2.png)
+
+![](img/3_3.png)
+
+![](img/3_4.png)
+
+![](img/3_5.png)
