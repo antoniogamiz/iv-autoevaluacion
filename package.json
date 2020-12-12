@@ -1,0 +1,22 @@
+{
+  "name": "iv-autoevaluacion",
+  "version": "1.0.0",
+  "description": "- [Hito 1](#hito-1) - [Hito 2](#hito-2) - [Hito 3](#hito-3) - [Hito 4](#hito-4) - [Hito 5](#hito-5)",
+  "main": "etcd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniogamiz/iv-autoevaluacion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniogamiz/iv-autoevaluacion/issues"
+  },
+  "homepage": "https://github.com/antoniogamiz/iv-autoevaluacion#readme",
+  "dependencies": {
+    "etcd3": "^1.1.0"
+  }
+}

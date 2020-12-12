@@ -186,3 +186,21 @@ Instalación de cli:
 ![](img/3_4.png)
 
 ![](img/3_5.png)
+
+## Hito 6
+
+Para instalar `etcd` vamos a [el repositorio oficial](https://github.com/etcd-io/etcd/releases) y miramos el número de versión que queremos y lo instalamos siguiendo estos [pasos](https://computingforgeeks.com/how-to-install-etcd-on-ubuntu-18-04-ubuntu-16-04/).
+
+Con este pequeño programa podemos consultar la variable:
+
+~~~javascript
+const { Etcd3 } = require("etcd3");
+const client = new Etcd3();
+
+(async () => {
+  const fooValue = await client.get("TEST").string();
+  console.log("foo was:", fooValue);
+})();
+~~~
+
+El resto de ejercicios los doy por hechos, ya que mi [aplicación](https://github.com/antoniogamiz/manga-api) cumple esos requisitos.
